@@ -574,3 +574,236 @@ body {
     font-size: 18px;
     font-weight: 700;
 }
+
+
+/* РОЗДІЛ ТОВАРУ */
+
+/* РОЗДІЛ ТОВАРУ */
+.product-detail-section {
+    padding: 60px 0 100px 0;
+    /* Додаємо фонову картинку Union(2) поверх сірого кольору */
+    background: #f7f7f7 url('images/Union(2).png') no-repeat;
+    background-position: center; /* Або налаштуй позицію, наприклад: top right */
+    background-size: auto; /* Залишає оригінальний розмір картинки */
+}
+
+.product-detail-section {
+    padding: 60px 0 100px 0;
+    background-color: #f7f7f7;
+}
+
+.detail-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.back-link {
+    display: inline-block;
+    width: 185px;
+    height: 23px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.63;
+    color: #57984C;
+    text-decoration: none;
+}
+
+.back-link-wrapper {
+    margin-top: -40px;
+    margin-bottom: 25px;
+}
+
+.product-flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.product-id-title {
+    width: 526px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.43;
+    color: #324950;
+    margin-bottom: 5px;
+}
+
+.product-category-name {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.3;
+    color: #57984C;
+    margin-bottom: 25px;
+}
+
+.green-stars {
+    color: #6a8c45;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.promo-highlight {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.icon-stack {
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.bg-circle { width: 100%; }
+
+.white-tomatoes {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+}
+
+.promo-description {
+    color: #d32f2f;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.section-label {
+    font-family: "Roboto Slab";
+    color: #57984C;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.green-underline {
+    width: 183px;
+    height: 1px;
+    background-color: #57984C;
+    margin-bottom: 25px;
+}
+
+.resistance-info p {
+    font-family: "Roboto Slab";
+    font-size: 17px;
+    color: #324950;
+    margin: 8px 0;
+}
+
+/* ПРАВА ЧАСТИНА */
+.product-image-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image-column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 75px;
+
+}
+
+.img-fluid {
+    width: 150%;
+    height: auto;
+    display: block;
+    /* Відрізаємо білий туман знизу */
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 86%);
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.download-container-under-img {
+    margin-top: -50px;
+    margin-right: -395px;
+}
+
+.btn-pdf-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid #6a8c45;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-pdf-pill span {
+    color: #6a8c45;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.btn-pdf-pill:hover {
+    background-color: #6a8c45;
+}
+
+.btn-pdf-pill:hover span { color: #ffffff; }
+
+/* ДОДАТКОВІ ХАРАКТЕРИСТИКИ */
+.additional-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 100px;
+    margin-top: 60px;
+}
+
+.info-column .section-label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #57984C;
+    line-height: 143%;
+}
+
+.green-underline.small {
+    width: 183px;
+    height: 1px;
+    border: 1px;
+    margin-bottom: 30px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    font-family: "Roboto Slab";
+    position: relative;
+    letter-spacing: 0%;
+    padding-left: 25px;
+    font-size: 17px;
+    color: #324950;
+    line-height: 200%;
+    margin-bottom: 0px;
+}
+
+.info-list li::before {
+    content: "•";
+    color: #57984C;
+    font-size: 25px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+@media (max-width: 992px) {
+    .product-flex-row { flex-direction: column; align-items: center; }
+    .product-image-right { margin-top: 40px; }
+    .additional-info-grid { grid-template-columns: 1fr; }
+}
